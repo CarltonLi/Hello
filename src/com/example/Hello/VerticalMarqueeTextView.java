@@ -18,12 +18,10 @@ public class VerticalMarqueeTextView extends TextView {
     private int scrollWay;
 
     /**
-     *
      * Creates a vertically auto scrolling marquee of a TextView within an
      * Activity. The (long) duration in milliseconds between calls to the next
      * scrollBy(0, pixelYOffSet). Defaults to 65L. The (int) amount of Y pixels
      * to scroll by defaults to 1.
-     *
      */
     public VerticalMarqueeTextView(Context context, AttributeSet attrs,
                                    int defStyle) {
@@ -33,12 +31,10 @@ public class VerticalMarqueeTextView extends TextView {
     }
 
     /**
-     *
      * Creates a vertically auto scrolling marquee of a TextView within an
      * Activity. The (long) duration in milliseconds between calls to the next
      * scrollBy(0, pixelYOffSet). Defaults to 65L. The (int) amount of Y pixels
      * to scroll by defaults to 1.
-     *
      */
     public VerticalMarqueeTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -47,12 +43,10 @@ public class VerticalMarqueeTextView extends TextView {
     }
 
     /**
-     *
      * Creates a vertically auto scrolling marquee of a TextView within an
      * Activity. The (long) duration in milliseconds between calls to the next
      * scrollBy(0, pixelYOffSet). Defaults to 65L. The (int) amount of Y pixels
      * to scroll by defaults to 1.
-     *
      */
     public VerticalMarqueeTextView(Context context) {
         super(context);
@@ -64,7 +58,7 @@ public class VerticalMarqueeTextView extends TextView {
      * Initialize fields and start the marquee.
      */
     private void init() {
-        setDuration(65l);
+        setDuration(100);
         setPixelYOffSet(1);
         isUserScrolling = isPaused = stop = false;
         pixelPerLine = 0;
@@ -75,21 +69,20 @@ public class VerticalMarqueeTextView extends TextView {
 
     /**
      * @return Returns the (long) duration in milliseconds between calls to the
-     *         next scrollBy(0, pixelYOffSet).
+     * next scrollBy(0, pixelYOffSet).
      */
     public long getDuration() {
         return duration;
     }
 
     /**
-     * @param duration
-     *            Sets the (long) duration in milliseconds between calls to the
-     *            next scrollBy(0, pixelYOffSet). Defaults to 65L if value is
-     *            less than or equal to 0.
+     * @param duration Sets the (long) duration in milliseconds between calls to the
+     *                 next scrollBy(0, pixelYOffSet). Defaults to 65L if value is
+     *                 less than or equal to 0.
      */
     public void setDuration(long duration) {
         if (duration <= 0) {
-            this.duration = 65l;
+            this.duration = 100;
         } else {
             this.duration = duration;
         }
@@ -104,9 +97,8 @@ public class VerticalMarqueeTextView extends TextView {
     }
 
     /**
-     * @param pixelYOffSet
-     *            Sets the (int) amount of Y pixels to scroll by. Defaults to 1
-     *            if value is less.
+     * @param pixelYOffSet Sets the (int) amount of Y pixels to scroll by. Defaults to 1
+     *                     if value is less.
      */
     public void setPixelYOffSet(int pixelYOffSet) {
         if (pixelYOffSet < 1) {
@@ -146,13 +138,13 @@ public class VerticalMarqueeTextView extends TextView {
 
     /**
      * Set scroll way
+     *
      * @param way sequence or circle
      */
     public void setScrollWay(int way) {
-        if(way >= SCROLL_WAY_SEQUENCE &&  way <= SCROLL_WAY_CIRCLE) {
+        if (way >= SCROLL_WAY_SEQUENCE && way <= SCROLL_WAY_CIRCLE) {
             scrollWay = way;
-        }
-        else {
+        } else {
             scrollWay = SCROLL_WAY_SEQUENCE;
         }
     }
@@ -166,7 +158,7 @@ public class VerticalMarqueeTextView extends TextView {
 
     /**
      * @return Returns true if paused (including if paused do to user manually
-     *         scrolling), false otherwise.
+     * scrolling), false otherwise.
      */
     public boolean isPaused() {
         if (isPaused || isUserScrolling) {
@@ -222,17 +214,17 @@ public class VerticalMarqueeTextView extends TextView {
 
                             } else { // Otherwise auto scroll marquee
                                 // if VMTV has reached or exceeded the last
-								// Y pixel scroll back to top
-								if ((VerticalMarqueeTextView.this).getScrollY() >= (pixelCount - pixelPerLine)) {
-									if (scrollWay == SCROLL_WAY_SEQUENCE) {
-										stopMarquee();
-									} else if (scrollWay == SCROLL_WAY_CIRCLE) {
-										(VerticalMarqueeTextView.this).scrollTo(0, 0);
-									} else {
-									}
-								} else { // Otherwise scroll by the pixelYOffSet
-									(VerticalMarqueeTextView.this).scrollBy(0, pixelYOffSet);
-								}
+                                // Y pixel scroll back to top
+                                if ((VerticalMarqueeTextView.this).getScrollY() >= (pixelCount - pixelPerLine)) {
+                                    if (scrollWay == SCROLL_WAY_SEQUENCE) {
+                                        stopMarquee();
+                                    } else if (scrollWay == SCROLL_WAY_CIRCLE) {
+                                        (VerticalMarqueeTextView.this).scrollTo(0, 0);
+                                    } else {
+                                    }
+                                } else { // Otherwise scroll by the pixelYOffSet
+                                    (VerticalMarqueeTextView.this).scrollBy(0, pixelYOffSet);
+                                }
 
                                 (VerticalMarqueeTextView.this).invalidate();
                             }

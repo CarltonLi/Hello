@@ -22,5 +22,8 @@
 
         <activity android:name=".TestVerticalScroll">
         </activity>
+
+        <activity android:name=".TestScrollNumberActivity">
+        </activity>
     </application>
 </manifest>

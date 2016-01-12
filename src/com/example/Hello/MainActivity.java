@@ -20,7 +20,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.start_test) {
-            Intent intent = new Intent(MainActivity.this, TestVerticalScroll.class);
+            Intent intent = new Intent(MainActivity.this, TestScrollNumberActivity.class);
             startActivity(intent);
         }
     }
