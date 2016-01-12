@@ -4,6 +4,8 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.text.method.ScrollingMovementMethod;
 import android.util.AttributeSet;
+import android.view.Gravity;
+import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 import android.widget.LinearLayout;
 import android.widget.Scroller;
@@ -37,6 +39,7 @@ public class VerticalScrollNumberView extends LinearLayout {
 
     private void init(Context context) {
         mContext = context;
+        setBackgroundColor(0xFF26bf85);
     }
 
     public void setData(int number) {
@@ -47,10 +50,25 @@ public class VerticalScrollNumberView extends LinearLayout {
             number = LIMIT_MAX;
         }
         String text = String.valueOf(number);
-        int count = text.length();
-        for(int i = 0; i != count; i++) {
+
+        for(int i = 0; i != text.length(); i++) {
             String scrollStr = StringUtil.string(START_NUMBER, text.charAt(i));
             addSubView(scrollStr);
+        }
+
+        int count = 0;
+        for(int i = getChildCount() - 1; i != 0; i--) {
+            if(getChildAt(i) instanceof ScrollTextView) {
+                LayoutParams params = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+                if(count == 2) {
+                    params.setMargins(5, 0, 0, 0);
+                    count = 0;
+                } else {
+                    params.setMargins(2, 0, 0 ,0);
+                    count++;
+                }
+                getChildAt(i).setLayoutParams(params);
+            }
         }
     }
 
@@ -66,10 +84,13 @@ public class VerticalScrollNumberView extends LinearLayout {
         */
         ScrollTextView textView = new ScrollTextView(mContext);
         textView.setText(text);
+        textView.setGravity(Gravity.CENTER);
+        textView.setBackgroundColor(0xFF000000);
+        textView.setTextColor(0xFFff5460);
         textView.setMinLines(1);
         textView.setMaxLines(1);
         textView.setContinuousScrolling(false);
-        textView.setSpeed((float) (Math.random() * 10 + 10));
+        textView.setSpeed((float) (Math.random() * 5 + 10));
         this.addView(textView);
     }
 
