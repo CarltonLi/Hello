@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 用于存储标准颜色库。 cp = color pool -->
+    <!-- 内容 -->
+    <color name="cp_cont_a">#FF292e47</color>
+    <color name="cp_cont_b">#FF18191a</color>
+    <color name="cp_cont_c">#FF7a7c80</color>
+    <color name="cp_cont_d">#FFabaeb2</color>
+    <color name="cp_cont_e">#FFc4c7cc</color>
+    <color name="cp_cont_f">#FF494b4c</color>
+    <color name="cp_cont_g">#FFffffff</color>
+    <color name="cp_cont_h">#FFf2460c</color>
+    <color name="cp_cont_i">#FFffffff</color>
+    <color name="cp_cont_m">#FFdce6f5</color>
+    <color name="cp_cont_n">#FFffffff</color>
+    <color name="cp_cont_j">#FF626466</color>
+
+    <!-- LINK & TIPS -->
+    <color name="cp_link_tip_a">#FF3385ff</color>
+    <color name="cp_link_tip_a_alpha70">#B33385ff</color>
+    <color name="cp_link_tip_a_alpha80">#CC3385ff</color>
+    <color name="cp_link_tip_b">#FF292e47</color>
+    <color name="cp_link_tip_c">#FF3668b2</color>
+    <color name="cp_link_tip_d">#FFf55925</color>
+    <color name="cp_link_tip_e">#FF1e2133</color>
+
+    <!-- BackGround & Line -->
+    <color name="cp_bg_line_a">#FFc8cacc</color>
+    <color name="cp_bg_line_b">#FFe1e3e5</color>
+    <color name="cp_bg_line_c">#FFebedf0</color>
+    <color name="cp_bg_line_d">#FFffffff</color>
+    <color name="cp_bg_line_e">#FFf5f7fa</color>
+    <color name="cp_bg_line_i">#FFFCFDFF</color>
+    <color name="cp_bg_line_k">#FF000000</color>
+    <color name="cp_bg_blue">#0088F4</color>
+
+
+    <!-- OTHER -->
+    <color name="cp_other_a">#FF673699</color>
+    <color name="cp_other_b">#FFff5460</color>
+    <color name="cp_other_c">#FF26bf85</color>
+    <color name="cp_other_d">#FF33aaff</color>
+    <color name="cp_other_e">#FFff821c</color>
+    <color name="cp_other_f">#FF4c6180</color>
+
+    <!-- 内容 -->
+    <color name="cp_cont_a_1">#FF232b38</color>
+    <color name="cp_cont_b_1">#FF9bafcc</color>
+    <color name="cp_cont_c_1">#FF748399</color>
+    <color name="cp_cont_d_1">#FF616d80</color>
+    <color name="cp_cont_e_1">#FF4e5766</color>
+    <color name="cp_cont_f_1">#FF8899b2</color>
+    <color name="cp_cont_g_1">#FF9bafcc</color>
+    <color name="cp_cont_h_1">#FFcc3314</color>
+    <color name="cp_cont_i_1">#B2ffffff</color>
+    <color name="cp_cont_m_1">#FF9bafcc</color>
+    <color name="cp_cont_n_1">#FF616d80</color>
+    <color name="cp_cont_j_1">#FF8899b2</color>
+
+    <!-- LINK & TIPS -->
+    <color name="cp_link_tip_a_1">#FF245db2</color>
+    <color name="cp_link_tip_b_1">#FF232b38</color>
+    <color name="cp_link_tip_c_1">#FF2a518c</color>
+    <color name="cp_link_tip_d_1">#FFb2411b</color>
+    <color name="cp_link_tip_e_1">#FF202733</color>
+    <!-- BackGround & Line -->
+    <color name="cp_bg_line_a_1">#FF161c24</color>
+    <color name="cp_bg_line_b_1">#FF192029</color>
+    <color name="cp_bg_line_c_1">#FF202733</color>
+    <color name="cp_bg_line_d_1">#FF262f3d</color>
+    <color name="cp_bg_line_e_1">#FF232b38</color>
+    <color name="cp_bg_line_d_ap_1">#dd262f3d</color>
+    <color name="cp_bg_line_d_alpha80">#CCffffff</color>
+
+
+    <!-- OTHER -->
+    <color name="cp_other_a_1">#FF452466</color>
+    <color name="cp_other_b_1">#FFb23b43</color>
+    <color name="cp_other_c_1">#FF1b855c</color>
+    <color name="cp_other_d_1">#FF2477b2</color>
+    <color name="cp_other_e_1">#FFb25b14</color>
+    <color name="cp_other_f_1">#FF191F29</color>
+    <color name="white_alpha0">#00FFFFFF</color>
+    <color name="white_alpha10">#19FFFFFF</color>
+    <color name="white_alpha20">#33FFFFFF</color>
+    <color name="white_alpha30">#4CFFFFFF</color>
+    <color name="white_alpha40">#66FFFFFF</color>
+    <color name="white_alpha50">#80FFFFFF</color>
+    <color name="white_alpha60">#99FFFFFF</color>
+    <color name="white_alpha70">#B3FFFFFF</color>
+    <color name="white_alpha80">#CCFFFFFF</color>
+    <color name="white_alpha90">#E6FFFFFF</color>
+    <color name="white_alpha95">#F2FFFFFF</color>
+    <color name="white_alpha100">#FFFFFFFF</color>
+    <color name="black_alpha10">#19000000</color>
+    <color name="black_alpha15">#26000000</color>
+    <color name="black_alpha20">#33000000</color>
+    <color name="black_alpha30">#4C000000</color>
+    <color name="black_alpha40">#66000000</color>
+    <color name="black_alpha50">#80000000</color>
+    <color name="black_alpha60">#99000000</color>
+    <color name="black_alpha70">#B3000000</color>
+    <color name="black_alpha80">#CC000000</color>
+    <color name="black_alpha85">#D8000000</color>
+    <color name="black_alpha90">#E6000000</color>
+    <color name="cp_cont_c_alpha80">#CC7a7c80</color>
+    <color name="cp_bg_line_d_alpha90">#E6ffffff</color>
+    <color name="cp_bg_line_c_alpha70">#B3ebedf0</color>
+
+    <!-- 主题皮肤相关的颜色 -->
+    <color name="s_navbar_title_color">#FFFFFF</color>
+    <color name="s_navbar_search_btn_color">#FF3385ff</color>
+    <color name="s_tabbar_text_color_n">#FF7a7c80</color>
+    <color name="s_tabbar_text_color_s">#FF3385ff</color>
+    <color name="s_actionbar_text_line_color_s">#FF3385ff</color>
+    <color name="s_actionbar_text_line_color_n">#FF7a7c80</color>
+
+</resources>
